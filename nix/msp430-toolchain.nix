@@ -187,6 +187,7 @@ let
 
     nativeBuildInputs = [
       pkgs.gnumake
+      pkgs.texinfo
       gccStage1
       binutils
     ];
@@ -214,7 +215,9 @@ let
         --disable-newlib-unbuf-stream-opt \
         --enable-lite-exit \
         --enable-newlib-global-atexit \
-        --disable-nls
+        --disable-nls \
+        --disable-libgloss \
+        --disable-doc
 
       runHook postConfigure
     '';
