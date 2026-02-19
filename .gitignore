@@ -1,0 +1,10 @@
+# Nix build output
+result
+result-*
+build/
+
+# Build artifacts
+toolchain/
+*.tar.gz
+log.txt
+tests/output
